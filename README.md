@@ -1,16 +1,22 @@
 # Industrial Plant Design: Agricultural Machinery Factory
 
+**Course:** Industrial Plants and Safety, Politecnico di Torino (Prof. A. Chiaraviglio), A.Y. 2024/25. 
+
+**Grade:** 30L/30
+
+**Group B1:** 14 students in two teams. Team A designed the rotary-tiller areas; **Team B** (Fatima Zouhour, Fatima Srour, Mehdi Farhat, Mahdi Ghrayeb, Kassem Damergi, Yagiz Ozer, Muhammad Salomov) designed the **flail-mower** areas.
+
+**Tools:** Excel (all calculations), AutoCAD (layouts)
+
+This repository documents the **flail-mower** part (Team B) and the shared plant-level results.
+
+
 Preliminary design of a greenfield production and logistics plant in northern Italy for two agricultural machines: **rotary tillers** and **flail mowers**, each in two widths (L = 1500 and 1750 mm). It covers everything from the bill of materials and machine counts to warehouses, docks, forklifts, a NIOSH manual-handling study and the full plant layout.
 
 <p align="center">
   <img src="images/11_Plant_Layout_v6.png" width="900" alt="Plant layout">
 </p>
 
-**Course:** Industrial Plants and Safety, Politecnico di Torino (Prof. A. Chiaraviglio), A.Y. 2024/25. Grade: 30L/30
-**Group B1:** 14 students in two teams. Team A designed the rotary-tiller areas; **Team B** (Fatima Zouhour, Fatima Srour, Mehdi Farhat, Mahdi Ghrayeb, Kassem Damergi, Yagiz Ozer, Muhammad Salomov) designed the **flail-mower** areas.
-**Tools:** Excel (all calculations), AutoCAD (layouts)
-
-This repository documents the **flail-mower** part (Team B) and the shared plant-level results.
 
 ---
 
@@ -21,7 +27,7 @@ This repository documents the **flail-mower** part (Team B) and the shared plant
 | [`workbook/`](workbook/) | The calculation workbook (14 sheets). `..._ORIGINAL.xlsx` is the version as submitted; `..._CORRECTED.xlsx` has 6 formula fixes, listed in [CORRECTIONS.md](CORRECTIONS.md). |
 | [`report/`](report/) | The final group report (44 pages) as submitted, with matriculation numbers removed. |
 | [`drawings/`](drawings/) | AutoCAD plant layout (A2, PDF). |
-| [`images/`](images/) | The figures used below. |
+| [`images/`](images/) | The figures used below; `images/brief/` holds the figures taken from the course requirements. |
 
 > The results below are taken from the **corrected** workbook. Where they differ from the submitted report, [CORRECTIONS.md](CORRECTIONS.md) explains why.
 
@@ -39,7 +45,13 @@ Demand is set by the brief: annual base production × a group factor (from the t
 
 ## 2. Bill of materials and material flow
 
-Each mower is a welded frame (guard, reinforcement brackets, hitch plates, rake) plus purchased drive shaft, gears and hammer shaft. Parts are made by **stamping → bending → welding → assembly**.
+The plant makes two product families, each in two widths:
+
+<p align="center"><img src="images/brief/product_lines.png" width="760" alt="Rotary tiller and flail mower product families"></p>
+
+Each mower is a welded frame (guard, reinforcement brackets, hitch plates, rake) plus purchased drive shaft, gears and hammer shaft. Parts are made by **stamping → bending → welding → assembly**. The simplified flail mower used in the project:
+
+<p align="center"><img src="images/brief/flail_mower_exploded_view.png" width="760" alt="Exploded view of the simplified flail mower with part codes"></p> **stamping → bending → welding → assembly**.
 
 | L = 1500 | L = 1750 |
 |---|---|
@@ -63,6 +75,10 @@ The machine count per department is total work time ÷ net available time per ma
 | Final assembly lines | 1.9 | **2** | |
 
 Welding (8 min/frame) is the bottleneck. So stamping, bending and welding are laid out as **departments** (machines can be added flexibly), and only final assembly runs as **lines**.
+
+The machines and their footprints (mm), as given in the brief, were used to size the departments:
+
+<p align="center"><img src="images/brief/operating_machines.png" width="560" alt="Punching machine, press brake and welding station with their footprints"></p>
 
 ## 4. Assembly line balancing
 
@@ -163,6 +179,7 @@ Recommended weight limit: **RWL = 25 kg × HM × VM × DM × AM × CM × FM**. T
 ![Site layout](images/12_Site_Layout_With_Parking.png)
 
 ---
+<sub>Product photos, the exploded view and the machine sheet (in `images/brief/`) are from the course project requirements (Industrial Plants and Safety, Politecnico di Torino, A.Y. 2024/25), reproduced for reference.</sub>
 
 ## Opening the workbook
 
